@@ -14,8 +14,16 @@
 - Оценка мастера 1–5 звёзд после завершённого занятия.
 - Профиль и настройки Web Push-уведомлений.
 - Mock API с хранением данных в `localStorage`, имитирующий клиентский API.
-- 
-<img width="1919" height="914" alt="Снимок экрана 2026-07-06 032617" src="https://github.com/user-attachments/assets/95a70566-14e1-4035-a6ab-4e9939857b92" />
+
+  Основные экраны:
+<img width="1919" height="907" alt="Снимок экрана 2026-07-06 032617" src="https://github.com/user-attachments/assets/f8833485-13e9-48c5-9943-0cbdf403c336" />
+<img width="1919" height="899" alt="Снимок экрана 2026-07-06 032635" src="https://github.com/user-attachments/assets/a12a8df5-d86d-4790-8a2c-7ed7c402b650" />
+<img width="1919" height="921" alt="Снимок экрана 2026-07-06 032734" src="https://github.com/user-attachments/assets/fb8a9427-832d-4eee-9336-2aa4e2cd7107" />
+<img width="803" height="846" alt="Снимок экрана 2026-07-06 032816" src="https://github.com/user-attachments/assets/94f78ebd-b373-4598-ab45-c352ab0abdbe" />
+<img width="1917" height="745" alt="Снимок экрана 2026-07-06 032830" src="https://github.com/user-attachments/assets/9be37300-04fd-4642-8fa2-3dbbc2615f1f" />
+Вход:
+<img width="670" height="504" alt="Снимок экрана 2026-07-06 032904" src="https://github.com/user-attachments/assets/9eb882e4-2fac-42ff-8059-f7f211ad19fc" />
+<img width="628" height="652" alt="Снимок экрана 2026-07-06 032915" src="https://github.com/user-attachments/assets/76667001-2294-49a7-9abe-984f9317fbdc" />
 
 ## Запуск
 
