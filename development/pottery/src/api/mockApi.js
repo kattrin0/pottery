@@ -43,7 +43,7 @@ function makeSlots() {
   const programs = seed.programs
   const masters = seed.masters
   const slots = [
-    [0, 18, 'p1', 'm1', 6, 3, 1200, 'scheduled'],
+    [0, 4, 'p1', 'm1', 6, 3, 1200, 'scheduled'],
     [1, 19, 'p2', 'm2', 10, 5, 1500, 'scheduled'],
     [2, 10, 'p1', 'm3', 6, 0, 1200, 'scheduled'],
     [3, 12, 'p2', 'm4', 10, 2, 1500, 'scheduled'],
@@ -141,7 +141,7 @@ export async function getSlots(filters = {}) {
   await delay()
   let slots = db.slots.map(enrichSlot).sort((a, b) => new Date(a.start_at) - new Date(b.start_at))
   const from = filters.from ? new Date(filters.from) : new Date()
-  const to = filters.to ? new Date(filters.to) : new Date(Date.now() + 30 * 86400000) // ← 30 дней
+  const to = filters.to ? new Date(filters.to) : new Date(Date.now() + 7 * 86400000) // ← 7 дней вместо 30
   to.setHours(23, 59, 59, 999)
   slots = slots.filter(s => new Date(s.start_at) >= from && new Date(s.start_at) <= to)
   if (filters.programIds?.length) slots = slots.filter(s => filters.programIds.includes(s.program_id))
@@ -198,7 +198,7 @@ export async function previewCancelBooking(id) {
   const msToStart = new Date(booking.slot.start_at) - new Date()
   const hoursToStart = msToStart / 3600000
   const isLate = hoursToStart < policy.threshold_hours
-  const penalty_amount = isLate ? Math.round(booking.slot.price * policy.penalty_percent / 100) : 0
+  const penalty_amount = isLate ? Math.round(booking.price_total * policy.penalty_percent / 100) : 0
   return { booking, policy, hours_to_start: Math.max(0, hoursToStart), is_late: isLate, penalty_amount }
 }
 

@@ -13,7 +13,7 @@ const error = ref('')
 const showFilters = ref(window.innerWidth >= 1024)
 
 const defaultFrom = toDateInput(new Date())
-const defaultTo = toDateInput(new Date(Date.now() + 30 * 86400000))
+const defaultTo = toDateInput(new Date(Date.now() + 7 * 86400000))
 const filters = ref({
   from: defaultFrom,
   to: defaultTo,
@@ -63,7 +63,7 @@ onMounted(load)
   <div class="page-title">
     <div>
       <h1>Расписание</h1>
-      <p>Слоты на ближайший месяц. Выберите занятие и запишитесь.</p>
+      <p>Слоты на ближайшую неделю. Выберите занятие и запишитесь.</p>
         <button class="btn secondary" @click="showFilters = !showFilters">
       Фильтры <span v-if="activeFilters()">●</span>
     </button>
