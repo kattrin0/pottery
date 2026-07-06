@@ -15,7 +15,7 @@
 - Профиль и настройки Web Push-уведомлений.
 - Mock API с хранением данных в `localStorage`, имитирующий клиентский API.
 - 
-<img width="1919" height="914" alt="Снимок экрана 2026-07-06 032617" src="https://github.com/user-attachments/assets/75147262-c96b-4165-83c0-06afc3d38caf" />
+<img width="1919" height="914" alt="Снимок экрана 2026-07-06 032617" src="https://github.com/user-attachments/assets/95a70566-14e1-4035-a6ab-4e9939857b92" />
 
 ## Запуск
 
